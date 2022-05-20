@@ -1,0 +1,687 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choosy foody</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    body{
+        width: 100%;
+    }
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    opacity: 0.7;
+}
+.logo-img img{
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: 25px;
+    border-radius: 20px;
+}
+nav{
+    margin-right: 50px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    list-style: none;
+}
+nav ul li{
+    color: #ffffff;
+    margin: 30px;
+}
+nav ul li:hover{
+    color: maroon;
+    padding: 5px;
+    cursor: pointer;    
+    }
+    #bar .fa, #times .fa{
+        display: none;
+       
+    }
+    #book{
+        width: 150px;
+        height: 30px;
+        color: white;
+        background-color: orangered;
+    }
+    .banner{
+        width: 100%;
+        height: 500px;
+       
+
+    }
+    .banner h1{
+        color: orangered;
+        font-style: italic;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left: 50px;
+        margin-top: 150px;
+    }
+    .banner h2{
+        color: whitesmoke;
+        font-family: sans-serif;
+        margin-left: 50px;
+        font-size: 50px;
+    
+    }
+    .banner p{
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left: 50px;
+        
+    }
+    .banner img{
+        width: 100%;
+        height: 820px;
+        position: absolute;
+        left:0px;
+        top: 0px;
+        z-index: -3;        
+      }
+        #story{
+        width: 250px;
+        height: 30px;
+        color: white;
+        background-color: orangered;
+ }
+ .Container{
+     background-color: black;
+     width: 350px;
+     height: 650px;
+     margin-left: 500px;
+     position: absolute;
+     left: 300px;
+     top: 170px;
+     z-index: -1 ;
+ }
+ .Container h1{
+     color: orangered;
+     text-align: center;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-style: italic;
+ }
+ .Container h2{
+     color: white;
+     text-align: center;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .Container p{
+     color: white;
+     text-align: left;
+     margin-left: 30px;
+     font-size: 25px;
+     margin-top: 20px;
+     
+ }
+#price{
+    color: orangered;
+}
+.chef{
+    
+    width: 100%;
+    height: 600px;
+    
+}
+.chef h1{
+    color: orangered;
+    margin-left: 600px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.chef h2{
+    margin-left: 600px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+#days{
+    color: orangered;
+    margin-bottom: -20px;
+}
+.chef h3{
+    margin-left: 600px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.chef h4{
+    margin-left: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    margin-top: 10px;
+}
+.chef p{
+    margin-left: 600px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.chef img{
+    width: 500px;
+        height: 600px;
+        position: absolute;
+        left:0px;
+        top: 850px;
+        z-index: -1;
+         
+}
+
+.oven{
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    overflow: auto;
+    background-color: black;
+    opacity: 0.9;
+}
+.oven h1{
+    color: orangered;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 200px;
+    
+}
+.oven h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    color: white;
+}
+.oven p{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+#money{
+    color: orangered;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.oven img{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    left: 0px;
+    top: 1430px;
+    z-index: -1;
+    opacity: 0.7;
+}
+.contain{
+    background-color: white;
+    width: 100%;
+    margin-top: 10px;
+    height: 200px;
+}
+.card-box{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            text-align: center;
+            margin-left: 130px;     
+            justify-content: center;
+            
+            
+        }
+        #card-img{
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 3px black;
+        }
+        #card-img:hover{
+            border-radius: 30px;
+            padding: 10px;
+        }
+.menu{
+    height: 250px;
+    width: 300px;
+    background-color: black;
+    text-align: center;
+    position: absolute;
+    left: 40px;
+    top: 1830px;
+    z-index: 0;
+}
+    .menu h2{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+    .menu h1{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+    .menu button{
+        width: 100px;
+        height: 30px;
+        color: white;
+        background-color: orangered;
+        margin-top: 50px;
+}
+.table{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    overflow: auto;
+    margin-top: 50px;
+    
+}
+.table h2{
+    color: orangered;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin-right: 400px;
+    margin-top: 200px;
+    
+}
+.table h1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+      font-size: 50px;
+    margin-right: 400px;
+    
+}
+.table img{
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    right: 300px;
+    top: 2100px;
+    z-index: -2;
+}
+#form{
+    width: 300px;
+    height: 450px;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    left: 700px;
+    top:2120px;
+    z-index: 0;
+}
+#form h1{
+    font-size: 20px;
+        font-weight: 800;
+        font-family: Arial, Helvetica, sans-serif;
+        color: orangered;
+        
+}
+#form input{
+    width: 80%;
+        padding: 10px;
+        margin: 10px;
+}
+#form button{
+    width: 200px;
+        height: 30px;
+        color: white;
+        background-color: orangered;
+}
+.newsletter{
+    width: 100%;
+    height: 330px;
+    text-align: center;
+    background-color: black;
+    overflow: auto;
+    margin-top: 50px;
+}
+    .newsletter h2{
+        color: orangered;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        margin-right: 720px;
+        margin-top: 100px;
+    }
+    .newsletter h1{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        margin-right: 720px;
+        
+    }
+    .newsletter p{
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-right: 720px;
+        
+    }
+    .newsletter img{
+        height: 330px;
+        position: absolute;
+        left: 500px;
+        top: 2640px;
+        z-index: 0;
+
+    }
+    #email{
+        display: flex;
+        flex-direction: row;
+        margin-left: 70px;
+        border: 1px solid;
+        
+    }   
+    #email input{
+        text-align: center;
+        width: 150px;
+        height: 30px;
+    }
+    #email button{
+        width: 130px;
+        height: 30px;
+        color: white;
+        background-color: orangered;
+    }
+@media (max-width:600px){
+    header{
+ flex-direction: column;
+    justify-content: space-between;
+}
+.logo-img img{
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 25px;
+    border-radius: 10px;
+} 
+nav ul{
+  display: none;
+      flex-direction: column;
+    background-color: black;
+    width: 200px;
+    margin-top: 15px;
+    line-height: 5px;
+    text-transform: uppercase;
+    list-style: none;
+    right: 0px;
+    top: 0px;
+    position: absolute;  
+}
+#bar .fa{
+        display: block;
+        right: 40px;
+        top: 25px;
+        color: white;
+        font-size: 50px;
+        position: absolute;
+       cursor: pointer;
+    }
+    #times .fa{
+        display: block; 
+        color: white;
+        font-size: 50px;
+        
+       cursor: pointer;
+    }
+}
+</style>
+<body>
+    <header>
+        <div class="Logo-img">
+            <img src="./images/cf-logo.png" alt="">
+        </div>
+       <nav>
+            <ul id="navlist">
+                <div id="times" onclick="closenav()"><i class="fa fa-times" aria-hidden="true"></i></div>
+                <li>HOME</li>
+                <li>ABOUT US</li>
+                <li>MENU</li>
+                <li>OUR CHEFS</li>
+                <li>CONTACT US</li>
+                <li>404 PAGE</li>
+                <li><button id="book" type="book a table">BOOK-A-TABLE</button></li>
+            </ul>
+        </nav>
+        <div id="bar" onclick="opennav()">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div class="Banner">
+        <img src="./images/slide-01.jpg" alt="">
+        <h1>Welcome to ------------------------</h1>
+        <h2>ChoosyFoody</h2>
+        <p>
+            Choosyfoody does the business where customers have the <br>
+            access as far-from-home everyday food needs like an a one- <br>
+            stop-shop. Our commitment is to collect fresh, locally <br>
+            produced, organic vegetables. <br> <br> <br>
+            <button id="story" type="discover our story">DISCOVER-OUR-STORY</button>
+        </p>
+        
+    </div>
+    <div class="Container" id="price">
+        <h1>Our</h1>
+        <h2>Chef's Choices</h2>
+        <p>
+            Breasted Chicken </p>
+          <p id="price">  $15.00 </p> 
+            <p>Athens Chicken Breast </p> 
+           <p id="price"> $25.00 </p> 
+             <p>steak-Shrimp Cambo </p>
+            <p id="price"> $15.00 </p> 
+           <p> North Atlantic Haddock </p>
+            <p id="price"> $40.00 </p> 
+           <p> Ribeye Steak </p>
+            <p id="price">$25.00</p> 
+        
+
+    </div>
+    
+    </div>
+    
+    <div class="chef">
+        <img src="./images/about-us.png" alt="">
+        <h1>What we are _________________</h1>
+        <h2>CHOOSY FOODY</h2>
+        <H3>"WE ARE OPEN FOR BREAKFAST,LUNCH AND DINNER"</H3>
+        <P>
+            ChoosyFoody does the business where customers have the access as far- <br>
+            from-home everyday food needs like on a one-stop-shop. Our commitment is <br>
+             to collect fresh, locally produced, organic vegetables and natural seafood to <br>
+             make tasty dishes that you'll not find anywhere. All of our products with the <br>
+             highest quality and value, healthy, nutritrious. we give outstanding personal <br>
+             services at the lowest possible prices. Our remarkable raw bar offers a variety <br>
+             of jumbo lobsters, Natural Oysters, Crispy Cherrystones and Littleneck Clams. <br>
+             Environment here is clean,fun and friendly,so you, your friends and family feel <br>
+             very comfortable here.We promise to make ChoosyFoody the best place to <br>
+             not only for food, but also to get pleasure and as well as the best place to work <br>
+             for the employees.
+        </P>
+        <h4> OUR PHONE NUMBER</h4>
+        <H1> +1-123-456-7890</H1>
+        <H4>OPENING DAYS</H4>
+        <h2 id="days"> MONDAY TO SATURDAY</h2>
+    </div>
+    <div class="oven">
+        <img src="./images/special-bg.png" alt="">
+        <h1>------- Today's Special ------------</h1>
+        <h2>Oven Grilled Lamb</h2>
+            <p>
+                Our finger licking tasty dish Oven Grilled Lamb with salad and sauce
+            </p>
+            <p id="money"> $35.00</p>
+        
+    </div>
+<div class="contain">
+    <div class="Card-box">
+       
+        <div class="Card">
+            <img src="./images/SaladPlate[1].jpg" id="card-img" alt="">
+        </div>
+        <div class="Card">
+            <img src="./images/chicken.jpg" id="card-img" alt="">
+        </div>
+        <div class="Card">
+            <img src="./images/bread.jpg" id="card-img" alt="">
+        </div>
+        <div class="Card">
+            <img src="./images/plates.jpg" id="card-img" alt="">
+        </div>
+    </div>
+    
+    </div>
+    <div class="menu">
+        <H2>CHOOSYFOODY</H2>
+        <H1>MENU</H1>
+        <button>All Dishes</button>
+
+    </div>
+    <div class="table">
+        <img src="./images/slide-02.jpg" alt="">
+        <h2>---------- Book a Table ----------</h2>
+        <h1>Come and Enjoy</h1>
+    </div>
+    <div id="form">
+        <h1>YOUR REQUIREMENT</h1>
+        <input type="number" placeholder="No. of Persons"> <br>
+        <input type="date" placeholder="Date"> <br>
+        <input type="time" placeholder="Time"> <br>
+        <input type="text" placeholder="Your Name"> <br>
+        <input type="number" placeholder="Your Phone Number"> <br>  
+        <input type="email" placeholder="Your Email"> <br>
+        <button>submit</button>
+    </div>
+    
+    <div class="newsletter">
+        <img src="./images/map.png" alt="">
+        <h2>Subscribe</h2>
+        <h1>Our Newsletter</h1>
+        <p>
+            subscribe to our newsletter and get attractive offers.
+        </p>
+        <form id="email">
+        <input type="email" placeholder="Your Email">
+        <button>Subscribe Now</button>
+    </form>
+    </div>
+    <style>
+        footer{
+            margin-top: 50px;
+        
+        }
+        .content{
+            background-color: rgb(20, 19, 19);
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 300px;
+        }
+        .card2{
+            width: 300px;
+            color: rgb(189, 170, 170);
+        }
+        .card2 img{
+            margin-top: 40px;
+            margin-left: 50px;
+        }
+        #first-h{
+            text-align: center;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-top: 20px;
+            font-size: 10px;
+        }
+        .card2 ul li{
+            list-style: none;
+            font-size: larger;
+            margin: 10px;
+        }
+        #paragraph{
+            list-style: none;
+            font-size: larger;
+            margin: 10px;
+            
+        }
+        .form{
+            width: 250px;
+             height: 250px;
+                 background-color: black;
+                    text-align: centre;
+                     margin-top: 30px;
+        }
+        .form h1{
+            font-size: 10px;
+        font-weight: 800;
+        font-family: Arial, Helvetica, sans-serif;
+        color: orangered;
+        
+        
+        }
+        .form input{
+            width: 80%;
+        padding: 10px;
+        margin: 10px;
+        color: black;
+        } 
+        .form input:hover{
+            padding: 10px;
+            border-style: hidden;
+        }
+        
+        .form button{
+            width: 200px;
+        height: 30px;
+        color: white;
+        background-color: orangered;
+} 
+        }
+    </style>
+<footer>
+<div class="content">
+        <div class="card2">
+        <img src="./images/cf-logo.png" alt="">
+        <h1 id="first-h">AROUND THE WEB</h1>
+    </div>
+   
+    <div class="card2">
+     <ul>
+         <li>HOME</li>
+         <li>ABOUT US</li>
+         <li>MENU</li>
+         <li>OUR CHEFS</li>
+         <li>CONTACTS</li>
+     </ul>   
+    </div>
+    <div class="card2">
+        <p id="paragraph">
+            +1 234 567 890 <br>
+            INFO@CHOOSYFOODY.COM <br><br>
+            77 GROVE STREET <br>
+            SOUTH NEWYORK <br>
+            NEWYORK 10013 <br>
+            UNITED STATES.
+        </p>
+    </div>
+    <div class="card2">
+    <div class="form">
+        <h1>WRITE SOMETHING TO US</h1>
+         
+        <input type="email" placeholder="Your Email"> <br>
+        <input type="text" placeholder="Your Name"> <br>
+        <input type="text" placeholder="Your Message"> <br>
+        <button>submit</button>
+    </div>
+</div>
+</div>
+
+</footer>
+<script>
+    let clickbutton=document.getElementById('navlist');
+    function opennav(){
+        // clickbutton.style.right='0';
+        clickbutton.style.display='block';
+    }
+    function closenav(){
+        // clickbutton.style.right='0';
+        clickbutton.style.display='none';
+    }
+</script>
+</body>
+</html>
